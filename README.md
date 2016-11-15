@@ -55,14 +55,14 @@ $ sudo python addwebhost.py
 Enter a domain name (www.mydomain.com):
 Enter your guest IP address (192.168.122.241):
 ...
-/******************************************************************/
-/* WARNING: if the virtual hoststs' domain does not exist         */
-/* (wich is in most cases), you have to add the domain to your    */
-/* known hosts file by typing in your host terminal as root user: */
-/* $ sudo -i # to enter root user                                 */
-/* $ echo "192.168.122.241      www.mydomain.com" >> /etc/hosts   */
-/* $ exit # to exit root user                                     */
-/******************************************************************/
+/*************************************************************************/
+/* WARNING: if the virtual hoststs' domain does not exist (wich is in    */
+/* most cases), you have to add the domain to your known hosts file by   */
+/*  typing in your host terminal with root privileges:                   */
+/*                                                                       */
+/* $ echo "192.168.122.241  www.mydomain.com" | sudo tee -a /etc/hosts   */
+/*                                                                       */
+/*************************************************************************/
 // now go to your browser, enter your domain and check if it works
 //
 ```
