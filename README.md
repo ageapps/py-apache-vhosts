@@ -33,7 +33,6 @@ Enter your guest IP address (192.168.122.241):
 // now go to your browser, enter your domain and check if it works
 //
 ```
-echo "output" | sudo tee -a file
 
 ## Usage in Vagrant Playground
 Suposing you have [vagrant] installed
