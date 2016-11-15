@@ -74,15 +74,15 @@ def cofigHost(domainName,ip):
 def restartApache():
     print("Restarting Apache2 to save changes...")
     execCommand("sudo service apache2 restart", "Restarting")
-
-    print("/******************************************************************/")
-    print("/* WARNING: if the virtual hoststs' domain does not exist         */")
-    print("/* (wich is in most cases), you have to add the domain to your    */")
-    print("/* known hosts file by typing in your host terminal as root user: */")
-    print("/* $ sudo -i # to enter root user                                 */")
-    print("/* $ echo \"192.168.122.241      www.mydomain.com\" >> /etc/hosts   */")
-    print("/* $ exit # to exit root user                                     */")
-    print("/******************************************************************/")
+    
+    print("/*************************************************************************/")
+    print("/* WARNING: if the virtual hoststs' domain does not exist (wich is in    */")
+    print("/* most cases), you have to add the domain to your known hosts file by   */")
+    print("/*  typing in your host terminal with root privileges:                   */")
+    print("*/                                                                       */")
+    print("/* $ echo \"192.168.122.241  www.mydomain.com\" | sudo tee -a /etc/hosts   */")
+    print("/*                                                                       */")
+    print("/*************************************************************************/")
 
 def execCommand(command,msg):
     p = subprocess.call(command, shell=True)
